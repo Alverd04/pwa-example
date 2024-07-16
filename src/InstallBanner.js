@@ -35,6 +35,7 @@ const InstallBanner = () => {
   };
 
   const handleCloseClick = () => {
+    console.log("User dismissed the install banner");
     setIsVisible(false);
   };
 
@@ -43,13 +44,21 @@ const InstallBanner = () => {
   }
 
   return (
-    <div className="install-banner">
-      <span>Install our app for a better experience!</span>
-      <div>
-        <button onClick={handleInstallClick}>Install</button>
-        <button onClick={handleCloseClick} className="close-button">
-          &times;
+    <div class="smart-banner">
+      <div class="banner-logo">
+        <img src="logo192.png" alt="App Logo" />
+      </div>
+      <div class="banner-info">
+        <div class="app-name">Pwa example</div>
+        <div class="app-rating">Subtitle</div>
+      </div>
+      <div class="banner-action">
+        <button onClick={handleInstallClick} class="action-btn">
+          Open In App
         </button>
+      </div>
+      <div class="close-banner" onclick={handleCloseClick}>
+        &times;
       </div>
     </div>
   );

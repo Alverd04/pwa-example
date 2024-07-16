@@ -1,48 +1,64 @@
-/* src/InstallBanner.css */
+body {
+  font-family: Arial, sans-serif;
+}
 
-.install-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
+.smart-banner {
+  display: none;
+  /* Initially hidden */
   align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
   padding: 10px;
+  border-bottom: 1px solid #ddd;
+  flex-direction: row;
 }
 
-.install-banner span {
-  margin-left: 20px;
+@media (max-width: 768px) {
+  .smart-banner {
+    display: flex;
+  }
+}
+
+.banner-logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.banner-info {
+  flex: 1;
+}
+
+.app-name {
   font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
 }
 
-.install-banner button {
-  margin: 0 10px;
-  padding: 8px 12px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #61dafb;
-  border: none;
-  border-radius: 5px;
-  color: white;
+.app-rating {
+  font-size: 14px;
+  color: #666;
 }
 
-.install-banner .close-button {
+.banner-action {
+  margin-right: 10px;
+}
+
+.action-btn {
   background-color: transparent;
-  color: white;
-  font-size: 24px;
-  line-height: 1;
+  color: #45a049;
+  padding: 5px 10px;
   border: none;
-  padding: 0;
+  border-radius: 3px;
+  margin: 0;
   cursor: pointer;
 }
 
-.install-banner .close-button:hover {
-  color: #f44336;
+.action-btn:hover {
+  background-color: #dcf6dd;
+}
+
+.close-banner {
+  cursor: pointer;
+  font-size: 18px;
 }
