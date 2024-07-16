@@ -1,4 +1,5 @@
 {
+  "id": "pwa-app",
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
@@ -21,5 +22,19 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "screenshots/1.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Application"
+    },
+    {
+      "src": "screenshots/2.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpg"
+    }
+  ]
 }
